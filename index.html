@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+
+<link href="style.css" rel="stylesheet">
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student registry</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Machakos University</h1>
+            <p id="description" class="description text-center">Welcome to Machakos University. Kindly take time and fill the form below</p>
+        </header>
+
+        <form id="student-registry">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form-group">
+                <label id="dob-label" for="dob">Date of Birth</label>
+                <input type="date" name="date" id="dob" class="form-control" placeholder="mm/dd/yyyy" required />
+            </div>
+
+            <div class="form-group">
+                <p>Gender</p>
+                <label><input name="gender" value="male" type="radio" class="input-radio" />Male</label>
+
+                <label><input name="gender" value="female" type="radio" class="input-radio" />Female</label>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+            </div>
+
+            <div class="form-group">
+                <label id="telephone-label" for="tel">Mobile Number</label>
+                <input type="tel" name="tel" id="tel" class="form-control" placeholder="+254 --- --- ---" required />
+            </div>
+
+            <div class="form-group">
+                <label id="county-label" for="county">Home County</label>
+                <input type="text" name="county" id="county" class="form-control" placeholder="Enter your home county" required />
+            </div>
+
+            <div class="form-group">
+                <label id="postal-label" for="postal">Postal Address</label>
+                <input type="number" name="postal" id="postal" class="form-control" placeholder="00100-4582" />
+            </div>
+
+            <div class="form-group">
+                <label id="course-label" for="course">Course Selected</label>
+                <input type="text" name="course" id="course" class="form-control" placeholder="Bsc Comp Science" required />
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
